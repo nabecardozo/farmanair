@@ -119,7 +119,7 @@ font-weight: 500;
     
     #productos {
         grid-area: productos;
-        background-color: rgb(191, 230, 197);
+        background-color: rgb(188, 242, 245);
         
     }
     
@@ -178,7 +178,7 @@ font-weight: 500;
     
     #productos {
         grid-area: productos;
-        background-color: rgb(191, 230, 197);
+        background-color: rgb(188, 242, 245);
         
     }
     
@@ -195,7 +195,7 @@ font-weight: 500;
 
 #list-nav:hover {
     font-size: 25PX;
-    color: rgb(12, 247, 51);
+    color: rgb(188, 242, 245);
     text-decoration-line: underline;
 }
 
