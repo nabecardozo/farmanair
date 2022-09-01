@@ -214,3 +214,34 @@ font-weight: 500;
 .body-ofertas {
     background-image: radial-gradient(#333333, rgba(243, 234, 234, 0.2));
 }
+
+/*FARMACIA*/
+
+.main-grid {
+    display: grid;
+    grid-template-areas:
+    "main-1 main-2"
+    "main-3 main-4";
+
+    grid-template-rows: 1fr 1fr;
+        grid-template-columns: 20% 30%;
+        height: 100vh;
+
+}
+
+.main-1 {
+    grid-area: main-1;
+    background-color: aquamarine;
+}
+
+.main-2 {
+    grid-area: main-2;
+}
+
+.main-3 {
+    grid-area: main-3;
+}
+
+.main-4 {
+    grid-area: main-4;
+}
