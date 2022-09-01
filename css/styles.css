@@ -9,7 +9,7 @@
     "servicios"
     "servicios"
     "footer";
-    grid-template-rows: 100px 70px 200px 200px 100px;
+    grid-template-rows: 100px 70px 200px 180px 100px;
     grid-template-columns: 1fr;
     height: 100%;
     
@@ -36,6 +36,8 @@ nav {
 
 #servicios {
     grid-area: servicios;
+    width: 400px;
+    height: max-content;
     
 }
 
@@ -125,7 +127,7 @@ font-weight: 500;
     
     #servicios {
         grid-area: servicios;
-        width: 80px;
+        width: 500px;
     }
     
     .border {
@@ -153,8 +155,8 @@ font-weight: 500;
         "nav nav nav"
         "productos servicios servicios"
         "footer footer footer";
-        grid-template-rows: 150px 70px 1fr 200px;
-        grid-template-columns: 30% 50% 20%;
+        grid-template-rows: 100px 70px 1fr 200px;
+        grid-template-columns: 25% 50% 20%;
         height: 100vh;
         
         
@@ -184,7 +186,7 @@ font-weight: 500;
     
     #servicios {
         grid-area: servicios;
-        width: 80px;
+        width: auto;
     }
     
     .border {
