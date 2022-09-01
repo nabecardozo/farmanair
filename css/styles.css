@@ -1,3 +1,4 @@
+
 /*diseno mobile*/
 
 .grid {
@@ -217,31 +218,32 @@ font-weight: 500;
 
 /*FARMACIA*/
 
-.main-grid {
-    display: grid;
-    grid-template-areas:
-    "main-1 main-2"
-    "main-3 main-4";
-
-    grid-template-rows: 1fr 1fr;
-        grid-template-columns: 20% 30%;
-        height: 100vh;
-
+.body-farmacia {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.main-1 {
-    grid-area: main-1;
-    background-color: aquamarine;
+.main-farmacia {
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.main-2 {
-    grid-area: main-2;
+.container {
+    width: 50%;
+    display: flex;
+    max-width: 1100px;
 }
 
-.main-3 {
-    grid-area: main-3;
-}
-
-.main-4 {
-    grid-area: main-4;
+.card {
+    width: 50%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #666666;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 }
