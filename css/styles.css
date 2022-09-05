@@ -1,3 +1,21 @@
+.main-farmacia {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  width: 80%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 400px;
+}
+
+.imagenes-tarjeta {
+  width: 200px;
+}
+
 /*diseno mobile*/
 .grid {
   display: grid;
@@ -163,32 +181,4 @@ footer {
   background-image: radial-gradient(#333333, rgba(243, 234, 234, 0.2));
 }
 
-/*FARMACIA*/
-.body-farmacia {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.main-farmacia {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.container {
-  width: 50%;
-  display: flex;
-  max-width: 1100px;
-}
-
-.card {
-  width: 50%;
-  margin: 20px;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #666666;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-}/*# sourceMappingURL=styles.css.map */
+/*FARMACIA*//*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,4 @@
+@import "./partials/farmacia";
 /*diseno mobile*/
 
 .grid {
@@ -217,32 +218,3 @@ font-weight: 500;
 
 /*FARMACIA*/
 
-.body-farmacia {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.main-farmacia {
-    width: 50%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.container {
-    width: 50%;
-    display: flex;
-    max-width: 1100px;
-}
-
-.card {
-    width: 50%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #666666;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-}
