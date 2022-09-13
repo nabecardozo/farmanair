@@ -37,8 +37,7 @@ nav {
 #servicios {
     grid-area: servicios;
     max-width: max-content;
-    height: max-content;
-    
+   
 }
 
 .border {
@@ -46,7 +45,7 @@ nav {
 }
 footer {
     grid-area: footer;
-    background-color: rgb(114, 112, 112);
+    background-color: map-get($colores, fondofooterindex);
     
 }
 
@@ -115,13 +114,13 @@ font-weight: 500;
     
     footer {
         grid-area: footer;
-        background-color: rgb(114, 112, 112);
+        background-color: map-get($colores, fondofooterindex);
         
     }
     
     #productos {
         grid-area: productos;
-        background-color: rgb(188, 242, 245);
+        background-color: map-get($colores, colorhoover);
         
     }
     
@@ -191,14 +190,14 @@ font-weight: 500;
     }
     
     .border {
-        border: 0px solid;
+        border: map-get($colores, borderindex );
     }
     
 }
 
 #list-nav:hover {
     font-size: 25PX;
-    color: rgb(188, 242, 245);
+    color: map-get($colores, colorhoover);
     text-decoration-line: underline;
 }
 

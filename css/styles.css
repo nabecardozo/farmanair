@@ -112,9 +112,6 @@ nav {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
 }
 
 .border {
@@ -229,9 +226,6 @@ footer {
   #servicios {
     grid-area: servicios;
     width: auto;
-  }
-  .border {
-    border: 0px solid;
   }
 }
 #list-nav:hover {
