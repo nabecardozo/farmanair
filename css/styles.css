@@ -110,7 +110,9 @@ nav {
 
 #servicios {
   grid-area: servicios;
-  width: 400px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -169,11 +171,11 @@ footer {
   }
   header {
     grid-area: header;
-    background-color: #ffffff;
+    background-color: rgb(216, 232, 216);
   }
   nav {
     grid-area: nav;
-    background-color: white;
+    background-color: rgb(243, 235, 235);
   }
   footer {
     grid-area: footer;
@@ -186,6 +188,9 @@ footer {
   #servicios {
     grid-area: servicios;
     width: 500px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .border {
     border: 0px solid;

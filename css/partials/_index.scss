@@ -22,7 +22,7 @@ header {
 }
 nav {
     grid-area: nav;
-    background-color: rgb(216, 232, 216);
+    background-color: $fondocolorindex;
     
 }
 
@@ -30,13 +30,13 @@ nav {
 
 #productos {
     grid-area: productos;
-    background-color: rgb(181, 172, 172);
+    background-color: $fondoindexproducto;
     
 }
 
 #servicios {
     grid-area: servicios;
-    width: 400px;
+    max-width: max-content;
     height: max-content;
     
 }
@@ -62,7 +62,7 @@ footer {
     }
     
 #list-nav {
-color: rgb(5, 1, 45);
+color: $colorindex;
 text-decoration: none;
 font-family: 'Montserrat', sans-serif;
 font-size: 20px;
@@ -105,11 +105,11 @@ font-weight: 500;
     header {
         
         grid-area: header;
-        background-color: #ffffff;
+        background-color: $fondocolorindex;
     }
     nav {
         grid-area: nav;
-        background-color: white;
+        background-color: rgb(243, 235, 235);
         
     }
     
@@ -128,6 +128,7 @@ font-weight: 500;
     #servicios {
         grid-area: servicios;
         width: 500px;
+        height: max-content;
     }
     
     .border {
