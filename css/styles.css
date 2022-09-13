@@ -105,7 +105,6 @@ nav {
 
 #productos {
   grid-area: productos;
-  background-color: rgb(181, 172, 172);
 }
 
 #servicios {

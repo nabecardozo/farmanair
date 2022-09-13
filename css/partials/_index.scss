@@ -22,7 +22,7 @@ header {
 }
 nav {
     grid-area: nav;
-    background-color: $fondocolorindex;
+    background-color: map-get($colores,fondocolorindex);
     
 }
 
@@ -30,7 +30,7 @@ nav {
 
 #productos {
     grid-area: productos;
-    background-color: $fondoindexproducto;
+    background-color: map-get($colores, fondoindexproduco);
     
 }
 
@@ -42,7 +42,7 @@ nav {
 }
 
 .border {
-    border: 0px solid;
+    border: map-get($bordes, borderindex);
 }
 footer {
     grid-area: footer;
@@ -62,7 +62,7 @@ footer {
     }
     
 #list-nav {
-color: $colorindex;
+color: map-get($colores, colorindex);
 text-decoration: none;
 font-family: 'Montserrat', sans-serif;
 font-size: 20px;
@@ -105,7 +105,7 @@ font-weight: 500;
     header {
         
         grid-area: header;
-        background-color: $fondocolorindex;
+        background-color: map-get($colores,fondocolorindex );
     }
     nav {
         grid-area: nav;
@@ -132,7 +132,7 @@ font-weight: 500;
     }
     
     .border {
-        border: 0px solid;
+        border: map-get($bordes, borderindex);
     }
     
     
