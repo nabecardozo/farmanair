@@ -1,0 +1,31 @@
+.lista-nav {
+     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 1rem;
+    height: 70px;
+    margin-bottom: 1rem;
+    }
+
+    .titulo-ofertas {
+    @extend %modificartitulo
+    }
+.boton-ofertas {
+    @extend %flexspacearound
+}
+.primario {
+    @extend %boton;
+    background-color: rgb(49, 47, 47);
+    color: aliceblue;
+}
+.secundario {
+    @extend %boton;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+.button {
+    @include botones()
+}

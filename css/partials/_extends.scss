@@ -1,0 +1,22 @@
+%boton {
+    border: none;
+    padding: 10px;
+    border-radius: 03px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 03px solid;
+    cursor: pointer;
+}
+
+%flexspacearound {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+%modificartitulo {
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 33px;
+    color: rgb(111, 140, 130);
+}
