@@ -18,7 +18,7 @@
 header {
         
     grid-area: header;
-    background-image: linear-gradient(to left, #666666, rgb(246, 246, 245), #6a6969);
+    background-image: linear-gradient(to left, #f8ebeb, rgb(246, 246, 245), #cccbcb);
 }
 nav {
     grid-area: nav;
@@ -93,10 +93,10 @@ font-weight: 500;
         grid-template-areas: 
         "header header header"
         "nav nav nav"
-        "productos servicios servicios"
-        "footer footer footer";
-        grid-template-rows: 150px 70px 1fr 200px;
-        grid-template-columns: 30% 50% 35%;
+        "servicios servicios servicios"
+        "conteiner-fluid conteiner-fluid conteiner-fluid";
+        grid-template-rows: 140px 70px 1fr 200px;
+        grid-template-columns: 30% 50% 30%;
         height: 100vh;
         
         
@@ -112,9 +112,12 @@ font-weight: 500;
         
     }
     
-    footer {
+    .conteiner-fluid {
         grid-area: footer;
         background-color: map-get($colores, fondofooterindex);
+        position: absolute;
+        bottom: 0;
+
         
     }
     
@@ -126,8 +129,8 @@ font-weight: 500;
     
     #servicios {
         grid-area: servicios;
-        width: 500px;
-        height: max-content;
+        width: 700px;
+        height: 400px;
     }
     
     .border {
@@ -154,9 +157,10 @@ font-weight: 500;
         "header header header"
         "nav nav nav"
         "productos servicios servicios"
-        "footer footer footer";
-        grid-template-rows: 100px 70px 1fr 200px;
-        grid-template-columns: 25% 50% 20%;
+        "conteiner-fluid conteiner-fluid conteiner-fluid"
+        ;
+        grid-template-rows: 100px 70px 200px auto;
+        grid-template-columns:20% 50% auto;
         height: 100vh;
         
         
@@ -172,15 +176,16 @@ font-weight: 500;
         
     }
     
-    footer {
-        grid-area: footer;
+    .conteiner-fluid {
+        grid-area: conteiner fluid;
         background-color: rgb(114, 112, 112);
+       
         
     }
     
     #productos {
         grid-area: productos;
-        background-color: rgb(201, 251, 254);
+        background-color: rgb(255, 255, 255);
         
     }
     

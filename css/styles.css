@@ -15,10 +15,10 @@
 }
 
 .titulo-ofertas {
-  align-items: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 33px;
-  color: rgb(111, 140, 130);
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: rgbrgb(194, 239, 208);
 }
 
 .main-farmacia {
@@ -107,6 +107,11 @@ header h1 {
   font-weight: 500;
 }
 
+.formulario {
+  text-align: center;
+  padding: 40px;
+}
+
 /*diseno mobile*/
 .grid {
   display: grid;
@@ -118,7 +123,7 @@ header h1 {
 
 header {
   grid-area: header;
-  background-image: linear-gradient(to left, #666666, rgb(246, 246, 245), #6a6969);
+  background-image: linear-gradient(to left, #f8ebeb, rgb(246, 246, 245), #cccbcb);
 }
 
 nav {
@@ -183,9 +188,9 @@ footer {
 @media screen and (min-width: 600px) {
   .grid {
     display: grid;
-    grid-template-areas: "header header header" "nav nav nav" "productos servicios servicios" "footer footer footer";
-    grid-template-rows: 150px 70px 1fr 200px;
-    grid-template-columns: 30% 50% 35%;
+    grid-template-areas: "header header header" "nav nav nav" "servicios servicios servicios" "conteiner-fluid conteiner-fluid conteiner-fluid";
+    grid-template-rows: 140px 70px 1fr 200px;
+    grid-template-columns: 30% 50% 30%;
     height: 100vh;
   }
   header {
@@ -196,20 +201,20 @@ footer {
     grid-area: nav;
     background-color: rgb(243, 235, 235);
   }
-  footer {
+  .conteiner-fluid {
     grid-area: footer;
     background-color: rgb(114, 112, 112);
+    position: absolute;
+    bottom: 0;
   }
   #productos {
     grid-area: productos;
-    background-color: rgb(188, 242, 245);
+    background-color: rgb(67, 214, 87);
   }
   #servicios {
     grid-area: servicios;
-    width: 500px;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    width: 700px;
+    height: 400px;
   }
   .border {
     border: 0px solid;
@@ -225,9 +230,9 @@ footer {
 @media screen and (min-width: 768px) {
   .grid {
     display: grid;
-    grid-template-areas: "header header header" "nav nav nav" "productos servicios servicios" "footer footer footer";
-    grid-template-rows: 100px 70px 1fr 200px;
-    grid-template-columns: 25% 50% 20%;
+    grid-template-areas: "header header header" "nav nav nav" "productos servicios servicios" "conteiner-fluid conteiner-fluid conteiner-fluid";
+    grid-template-rows: 100px 70px 200px auto;
+    grid-template-columns: 20% 50% auto;
     height: 100vh;
   }
   header {
@@ -238,13 +243,13 @@ footer {
     grid-area: nav;
     background-color: white;
   }
-  footer {
-    grid-area: footer;
+  .conteiner-fluid {
+    grid-area: conteiner fluid;
     background-color: rgb(114, 112, 112);
   }
   #productos {
     grid-area: productos;
-    background-color: rgb(201, 251, 254);
+    background-color: rgb(255, 255, 255);
   }
   #servicios {
     grid-area: servicios;
@@ -253,7 +258,7 @@ footer {
 }
 #list-nav:hover {
   font-size: 25PX;
-  color: rgb(188, 242, 245);
+  color: rgb(67, 214, 87);
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
