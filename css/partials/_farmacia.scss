@@ -1,0 +1,17 @@
+.main-farmacia {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 80%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 400px;
+}
+
+.imagenes-tarjeta {
+    width: 200px;
+}

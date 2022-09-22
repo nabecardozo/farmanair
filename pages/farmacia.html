@@ -4,60 +4,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css/styles.css">
-    <title>farmacia</title>
-</head>
-<body>
-    <h1>farmacia</h1>
-    <!--lista no ordenada-->
-    <ul>
-        <li> <a href="../index.html">inicio</a></li>
-        <li> <a href="./farmacia.html">farmacia</a></li>
-        <li> <a href="./cosmetica.html">cosmetica</a></li>
-        <li> <a href="./formulario.html">formulario</a></li>
-        <li> <a href="./ofertas.html">ofertas</a></li>
-    </ul>
-
-
-
-    <h2>productos</h2>
-    <!--tabla-->
-    <table border="02px solid" cellpadding="5px" cellspacing="10px">
-        <tr>
-            <th>producto</th>
-            <th>precio</th>
-            <th>cantidad</th>
-
-        </tr>
-        <tr>
-            <td>ibuprofeno</td>
-            <td>$600</td>
-            <td>1.200</td>
-
-        </tr>
-        <tr>
-            <td>amoxicilina</td>
-            <td>$160</td>
-            <td>900</td>
-        </tr>
-        <tr>
-            <td>ketorolac</td>
-            <td>$280</td>
-            <td>20</td>
-        </tr>
-    </table>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 
     
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="description" content="pagina de MEDICACIÓN">
+    <meta name="keywords" content="SALUD, BIENESTAR, PREVENCION, CURA, AYUDA, PRESION ARTERIAL, SANARSE">
+    <title>farmacia</title>
+</head>
+<body class="body-farmacia">
+
+  
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./cosmetica.html">Cósmetica</a>
+                  <a class="nav-link" href="./formulario.html">Formulario</a>
+                  <a class="nav-link" href="./ofertas.html">Ofertas</a>
+                  <a class="nav-link disabled"> Farmacia</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+     <section>
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand">Shampoo y Acondicionador</a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </nav>
+
+        </section> 
+     
+
+    <main  class="main-farmacia">
+
+      <div class="container">
+        <div class="card">
+          <figure>
+            <img class="imagenes-tarjeta" src="../imagenes/20094__55754_std.jpg" alt="">
+          </figure>
+          <div class="contenido">
+            <h3>Biferdil</h3>
+            <p>Shampoo Biferdil con keratina vegetal, 100% vegano x 200ml</p>
+            <a href="#">Agregar al carrito</a>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="card">
+            <figure>
+              <img class="imagenes-tarjeta" src="../imagenes/Shampo-Restaurador-Caviar-Anti-Aging-Blond-Repair-Para-Cabellos-Secos-01-01.png" alt="">
+            </figure>
+            <div class="contenido">
+              <h3>CAVIAR</h3>
+              <p>Shampoo Restaurador de la raíz a las puntas</p>
+              <a href="#">Agregar al carrito</a>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="card">
+              <div>
+                <img class="imagenes-tarjeta" src="../imagenes/semi-di-lino-shampoo-azul11-0f4191e7ad00f06f8f16287215494808-480-0.png" alt="">
+              </div>
+              <div class="contenido">
+                <h3>SEMI-DI-LINO</h3>
+                <p>Shampoo con la nueva tecnología, voluminzing</p>
+                <a href="#">Agregar al carrito</a>
+              </div>
+            </div>
+
+      </div>
+
+    </main>
+
+    
+
+    
+        
 
      <!--footer-->
-     <ul>
-        <li> <a href="../index.html">inicio</a></li>
-        <li> <a href="./farmacia.html">farmacia</a></li>
-        <li> <a href="./cosmetica.html">cosmetica</a></li>
-        <li> <a href="./formulario.html">formulario</a></li>
-        <li> <a href="./ofertas.html">ofertas</a></li>
-    </ul>
+     <div class="conteiner-fluid">
+      <div class="row p-5 pb-2 bg-dark text-white">
+          <div class="col-xs-12 col-md-6 col-lg-3">
+              <p class="h3">Farmacia LLoret</p>
+              <p>El indio 500,</p>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3">
+              <p class="h5 mb-3">Atención al Cliente</p>
+              <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="#">Preguntas frecuentes</a>
+              </div>
+
+              <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="#">Envíos y retiros</a>
+              </div>
+
+              <div class="mb-2">
+                  <a class="text-secondary pb-2  text-decoration-none" href="#">Devoluciones</a>
+              </div>
+          </div>
+
+
+          <div class="col-xs-12 col-md-6 col-lg-3">
+              <p class="h5 mb-3">Links</p>
+              <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="#">Terms & conditions</a>
+              </div>
+              <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="#">privacy policy</a>
+              </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6 col-lg-3">
+              <p class="h5 mb-3">Contacto</p>
+
+              <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="#">1132196543</a>
+              </div>
+
+              <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="https://www.instagram.com/">Instagram</a>
+              </div>
+              <div class="mb-2">
+                  <a class="text-secondary text-decoration-none" href="https://es-la.facebook.com/">Facebook</a>
+              </div>
+          </div>
+          <div class="col-xs-12 pt-4">
+              <p class="text-white text-center">Copyrights - All rights reserved °2022
+
+              </p>
+          </div>
+      </div>
+
+   </div>
+
+    <!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+crossorigin="anonymous"></script>
 </body>
 
 

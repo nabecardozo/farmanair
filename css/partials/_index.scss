@@ -1,0 +1,211 @@
+/*diseno mobile*/
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "productos"
+    "servicios"
+    "servicios"
+    "footer";
+    grid-template-rows: 100px 70px 200px 180px 100px;
+    grid-template-columns: 1fr;
+    height: 100%;
+    
+    
+}
+header {
+        
+    grid-area: header;
+    background-image: linear-gradient(to left, #f8ebeb, rgb(246, 246, 245), #e4d4e2);
+}
+nav {
+    grid-area: nav;
+    background-color: map-get($colores,fondocolorindex);
+    
+}
+
+
+
+#productos {
+    grid-area: productos;
+    background-color: map-get($colores, fondoindexproduco);
+    
+}
+
+#servicios {
+    grid-area: servicios;
+    max-width: max-content;
+   
+}
+
+.border {
+    border: map-get($bordes, borderindex);
+}
+footer {
+    grid-area: footer;
+    background-color: map-get($colores, fondofooterindex);
+    
+}
+
+.lista-nav {
+     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 1rem;
+    height: 70px;
+    margin-bottom: 1rem;
+    }
+    
+#list-nav {
+color: map-get($colores, colorindex);
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+font-weight: 500;
+}
+
+.header-titulo {
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 25px;
+
+}
+
+.footer-index {
+    text-decoration: none; 
+}
+
+.imagen-logo {
+    transform: translate(60px, 10px);
+    height: 50px;
+    width: 50px;
+
+}
+
+/*media tablet*/
+@media screen and (min-width: 600px) {
+
+    .grid {
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "servicios servicios servicios"
+        "conteiner-fluid conteiner-fluid conteiner-fluid";
+        grid-template-rows: 140px 70px 1fr 200px;
+        grid-template-columns: 30% 50% 30%;
+        height: 100vh;
+        
+        
+    }
+    header {
+        
+        grid-area: header;
+        background-color: map-get($colores,fondocolorindex );
+    }
+    nav {
+        grid-area: nav;
+        background-color: rgb(243, 235, 235);
+        
+    }
+    
+    .conteiner-fluid {
+        grid-area: footer;
+        background-color: map-get($colores, fondofooterindex);
+        
+        bottom: 0;
+
+        
+    }
+    
+    #productos {
+        grid-area: productos;
+        background-color: map-get($colores, colorhoover);
+        
+    }
+    
+    #servicios {
+        grid-area: servicios;
+        width: 700px;
+        height: 400px;
+    }
+    
+    .border {
+        border: map-get($bordes, borderindex);
+    }
+    
+    
+    .imagen-logo {
+        transform: translate(05px, 0px);
+        padding: 05px;
+        
+        width: 80px;
+        height: 80px;
+    }
+    
+
+ }
+/*disenio escriorio*/
+@media screen and (min-width: 768px) {
+
+    
+    header {
+        
+        grid-area: header;
+        background-color: #ffffff;
+    }
+    nav {
+        grid-area: nav;
+        background-color: white;
+        
+    }
+    
+    .conteiner-fluid {
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    
+        
+    }
+    .body-index {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    #productos {
+        grid-area: productos;
+        background-color: rgb(255, 255, 255);
+        
+    }
+    
+    #servicios {
+        grid-area: servicios;
+        width: auto;
+    }
+    
+    .border {
+        border: map-get($colores, borderindex );
+    }
+    
+}
+
+#list-nav:hover {
+    font-size: 25PX;
+    color: map-get($colores, colorhoover);
+    text-decoration-line: underline;
+}
+
+#list-nav {
+    font-weight: 500;
+    color: #333;
+    font-size: 20px;
+    transition: color 1.5s, font-size 1.5s;
+}
+
+
+
