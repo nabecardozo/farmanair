@@ -1,198 +1,269 @@
 /*diseno mobile*/
-
-.grid {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "productos"
-    "servicios"
-    "servicios"
-    "footer";
-    grid-template-rows: 100px 70px 200px 180px 100px;
-    grid-template-columns: 1fr;
-    height: 100%;
-    
-    
-}
-header {
-        
-    grid-area: header;
-    background-image: linear-gradient(to left, #f8ebeb, rgb(246, 246, 245), #e4d4e2);
-}
-nav {
-    grid-area: nav;
-    background-color: map-get($colores,fondocolorindex);
-    
-}
-
-
-
-#productos {
-    grid-area: productos;
-    background-color: map-get($colores, fondoindexproduco);
-    
-}
-
-#servicios {
-    grid-area: servicios;
-    max-width: max-content;
-   
-}
-
-.border {
-    border: map-get($bordes, borderindex);
-}
-footer {
-    grid-area: footer;
-    background-color: map-get($colores, fondofooterindex);
-    
-}
-
-.lista-nav {
-     
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 1rem;
-    height: 70px;
-    margin-bottom: 1rem;
-    }
-    
-#list-nav {
-color: map-get($colores, colorindex);
-text-decoration: none;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-weight: 500;
-}
-
-.header-titulo {
-    font-family: 'Montserrat', sans-serif;;
-    font-size: 25px;
-
-}
-
-.footer-index {
-    text-decoration: none; 
-}
-
-.imagen-logo {
-    transform: translate(60px, 10px);
-    height: 50px;
-    width: 50px;
-
-}
-
-/*media tablet*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 120px) and (max-width: 424px) {
 
     .grid {
         display: grid;
-        grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "servicios servicios servicios"
-        "conteiner-fluid conteiner-fluid conteiner-fluid";
-        grid-template-rows: 140px 70px 1fr 200px;
-        grid-template-columns: 30% 50% 30%;
-        height: 100vh;
-        
-        
+        grid-template-areas:
+            "header"
+            "nav"
+            "servicios"
+            "servicios"
+            "destacadas"
+            "footer";
+        grid-template-rows: 100px 100px 400px 180px 300px 300px;
+        grid-template-columns: auto;
+        height: 100%;
+
+
     }
+
     header {
-        
+
         grid-area: header;
-        background-color: map-get($colores,fondocolorindex );
+        padding: 10px;
+        background-image: linear-gradient(to left, #f8ebeb, rgb(246, 246, 245), #e4d4e2);
     }
+
     nav {
         grid-area: nav;
-        background-color: rgb(243, 235, 235);
-        
-    }
-    
-    .conteiner-fluid {
-        grid-area: footer;
-        background-color: map-get($colores, fondofooterindex);
-        
-        bottom: 0;
+        background-color: map-get($colores, fondocolorindex);
 
-        
     }
-    
-    #productos {
-        grid-area: productos;
-        background-color: map-get($colores, colorhoover);
-        
-    }
-    
+
+
+
+   .destacadas {
+    grid-area: destacadas;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+   }
+
+   .parrafo {
+        font-size: 100%;
+        padding: 25px;
+        color: black;
+        font-weight: bold;
+        border-bottom: #35ca74 solid 2px;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 2rem;
+   }
+
     #servicios {
         grid-area: servicios;
-        width: 700px;
-        height: 400px;
+        max-width: max-content;
+        height: max-content;
+
     }
-    
+
     .border {
         border: map-get($bordes, borderindex);
     }
-    
-    
-    .imagen-logo {
-        transform: translate(05px, 0px);
-        padding: 05px;
-        
-        width: 80px;
-        height: 80px;
-    }
-    
 
- }
-/*disenio escriorio*/
-@media screen and (min-width: 768px) {
+    footer {
+        grid-area: footer;
+        background-color: map-get($colores, fondofooterindex);
 
-    
-    header {
-        
-        grid-area: header;
-        background-color: #ffffff;
     }
-    nav {
-        grid-area: nav;
-        background-color: white;
-        
-    }
-    
-    .conteiner-fluid {
-    text-align: center;
-    padding: 10px;
-    margin-top: auto;
-    
-        
-    }
-    .body-index {
-        margin: 0;
+
+    .lista-nav {
+
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        list-style-type: none;
+        padding: 1rem;
+        height: 70px;
+        margin-bottom: 1rem;
+        justify-content: space-around;
     }
-    
-    #productos {
-        grid-area: productos;
-        background-color: rgb(255, 255, 255);
+
+    #list-nav {
+        color: map-get($colores, colorindex);
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .header-titulo {
+        font-family: 'Montserrat', sans-serif;
+        ;
+        font-size: 25px;
+
+    }
+
+    .imagen-logo {
+        transform: translate(30px, 04px);
+        height: 20px;
+        width: 20px;
+
+    }
+    .marcas{
+        display: flex;
+        width: 150px;
         
     }
-    
+ }
+
+ /*media tablet*/
+ @media screen and (min-width: 425px) and (max-width: 767px) {
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "servicios"
+            "servicios"
+            "destacadas"
+            "footer";
+        grid-template-rows: 100px 100px 400px 180px 300px 300px;
+        grid-template-columns: auto;
+        height: 100%;
+
+
+    }
+
+    header {
+
+        grid-area: header;
+        background-color: map-get($colores, fondocolorindex);
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: rgb(235, 217, 252)
+    }
+
+    .conteiner-fluid {
+        grid-area: footer;
+        background-color: map-get($colores, fondofooterindex);
+
+        bottom: 0;
+
+
+    }
+
+    #productos {
+        grid-area: productos;
+        background-color: map-get($colores, colorhoover);
+
+    }
+
     #servicios {
         grid-area: servicios;
         width: auto;
     }
-    
+
     .border {
-        border: map-get($colores, borderindex );
+        border: map-get($bordes, borderindex);
     }
+
+
+    .imagen-logo {
+        transform: translate(05px, 0px);
+        padding: 05px;
+
+
+        width: 80px;
+        height: 80px;
+    }
+
     
-}
+
+    .destacadas {
+        grid-area: destacadas;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    
+       }
+    
+       .parrafo {
+            font-size: 100%;
+            padding: 25px;
+            color: black;
+            font-weight: bold;
+            border-bottom: #35ca74 solid 2px;
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 2rem;
+       }
+       .marcas {
+        width: 200px;
+       }
+
+    }
+ 
+ /*media escritorio*/
+ @media screen and (min-width: 699px)and(max-width: 1387px) {
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "nav"
+            "servicios"
+            "servicios"
+            "destacadas"
+            "footer";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        height: 100%;
+
+
+    }
+
+    header {
+
+        grid-area: header;
+        background-color: map-get($colores, fondocolorindex);
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: rgb(235, 217, 252)
+    }
+
+    .conteiner-fluid {
+        grid-area: footer;
+        background-color: map-get($colores, fondofooterindex);
+        
+
+        bottom: 0;
+
+
+    }
+
+    #productos {
+        grid-area: productos;
+        background-color: map-get($colores, colorhoover);
+
+    }
+
+    #servicios {
+        grid-area: servicios;
+        width: auto;
+    }
+
+    .border {
+        border: map-get($bordes, borderindex);
+    }
+
+
+    .imagen-logo {
+        transform: translate(10px, 10px);
+        padding: 30px;
+
+
+        width: 200px;
+        height: 200px;
+    }
+
+
+
 
 #list-nav:hover {
     font-size: 25PX;
@@ -201,11 +272,45 @@ font-weight: 500;
 }
 
 #list-nav {
-    font-weight: 500;
-    color: #333;
-    font-size: 20px;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
     transition: color 1.5s, font-size 1.5s;
 }
 
+.nav-link {
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    transition: color 1.5s, font-size 1.5s;
+}
 
+.nav-link:hover {
+    font-size: 25PX;
+    color: map-get($colores, colorhoover);
+    text-decoration-line: underline;
+}
 
+.marcas {
+    width: 400px;
+    height: 400px;
+}
+
+.destacadas {
+    grid-area: destacadas;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    p {
+        font-size: 150%;
+        color: black;
+        font-weight: bold;
+        border-bottom: #35ca74 solid 2px;
+        font-family: "Roboto", sans-serif;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+}
+}
