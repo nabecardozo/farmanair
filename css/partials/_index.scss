@@ -32,16 +32,16 @@
 
 
 
-   .destacadas {
-    grid-area: destacadas;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    .destacadas {
+        grid-area: destacadas;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
 
-   }
+    }
 
-   .parrafo {
+    .parrafo {
         font-size: 100%;
         padding: 25px;
         color: black;
@@ -49,7 +49,7 @@
         border-bottom: #35ca74 solid 2px;
         font-family: "Roboto", sans-serif;
         margin-bottom: 2rem;
-   }
+    }
 
     #servicios {
         grid-area: servicios;
@@ -100,15 +100,16 @@
         width: 20px;
 
     }
-    .marcas{
+
+    .marcas {
         display: flex;
         width: 150px;
-        
-    }
- }
 
- /*media tablet*/
- @media screen and (min-width: 425px) and (max-width: 767px) {
+    }
+}
+
+/*media tablet*/
+@media screen and (min-width: 425px) and (max-width: 767px) {
 
     .grid {
         display: grid;
@@ -171,7 +172,7 @@
         height: 80px;
     }
 
-    
+
 
     .destacadas {
         grid-area: destacadas;
@@ -179,26 +180,27 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-    
-       }
-    
-       .parrafo {
-            font-size: 100%;
-            padding: 25px;
-            color: black;
-            font-weight: bold;
-            border-bottom: #35ca74 solid 2px;
-            font-family: "Roboto", sans-serif;
-            margin-bottom: 2rem;
-       }
-       .marcas {
-        width: 200px;
-       }
 
     }
- 
- /*media escritorio*/
- @media screen and (min-width: 699px)and(max-width: 1400px) {
+
+    .parrafo {
+        font-size: 100%;
+        padding: 25px;
+        color: black;
+        font-weight: bold;
+        border-bottom: #35ca74 solid 2px;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 2rem;
+    }
+
+    .marcas {
+        width: 200px;
+    }
+
+}
+
+/*media escritorio*/
+@media screen and (min-width: 699px)and(max-width: 1400px) {
 
     .grid {
         display: grid;
@@ -230,7 +232,7 @@
     .conteiner-fluid {
         grid-area: footer;
         background-color: map-get($colores, fondofooterindex);
-        
+
 
         bottom: 0;
 
@@ -265,52 +267,52 @@
 
 
 
-#list-nav:hover {
-    font-size: 20PX;
-    color: map-get($colores, colorhoover);
-    text-decoration-line: underline;
-}
-
-#list-nav {
-    font-weight: 100;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    transition: color 1.5s, font-size 1.5s;
-}
-
-.nav-link {
-    font-weight: 300;
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    transition: color 1.5s, font-size 1.5s;
-}
-
-.nav-link:hover {
-    font-size: 20PX;
-    color: map-get($colores, colorhoover);
-    text-decoration-line: underline;
-}
-
-.marcas {
-    width: 400px;
-    height: 400px;
-}
-
-.destacadas {
-    grid-area: destacadas;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-
-    p {
-        font-size: 150%;
-        color: black;
-        font-weight: bold;
-        border-bottom: #35ca74 solid 2px;
-        font-family: "Roboto", sans-serif;
-        margin-top: 0;
-        margin-bottom: 2rem;
+    #list-nav:hover {
+        font-size: 20PX;
+        color: map-get($colores, colorhoover);
+        text-decoration-line: underline;
     }
-}
+
+    #list-nav {
+        font-weight: 100;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        transition: color 1.5s, font-size 1.5s;
+    }
+
+    .nav-link {
+        font-weight: 300;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        transition: color 1.5s, font-size 1.5s;
+    }
+
+    .nav-link:hover {
+        font-size: 20PX;
+        color: map-get($colores, colorhoover);
+        text-decoration-line: underline;
+    }
+
+    .marcas {
+        width: 400px;
+        height: 400px;
+    }
+
+    .destacadas {
+        grid-area: destacadas;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        p {
+            font-size: 150%;
+            color: black;
+            font-weight: bold;
+            border-bottom: #35ca74 solid 2px;
+            font-family: "Roboto", sans-serif;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+    }
 }
