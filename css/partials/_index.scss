@@ -198,7 +198,7 @@
     }
  
  /*media escritorio*/
- @media screen and (min-width: 699px)and(max-width: 1387px) {
+ @media screen and (min-width: 699px)and(max-width: 1400px) {
 
     .grid {
         display: grid;
@@ -266,27 +266,27 @@
 
 
 #list-nav:hover {
-    font-size: 25PX;
+    font-size: 20PX;
     color: map-get($colores, colorhoover);
     text-decoration-line: underline;
 }
 
 #list-nav {
-    font-weight: 200;
+    font-weight: 100;
     color: rgb(0, 0, 0);
-    font-size: 50px;
+    font-size: 20px;
     transition: color 1.5s, font-size 1.5s;
 }
 
 .nav-link {
-    font-weight: 200;
+    font-weight: 300;
     color: rgb(0, 0, 0);
-    font-size: 50px;
+    font-size: 30px;
     transition: color 1.5s, font-size 1.5s;
 }
 
 .nav-link:hover {
-    font-size: 25PX;
+    font-size: 20PX;
     color: map-get($colores, colorhoover);
     text-decoration-line: underline;
 }
