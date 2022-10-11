@@ -29,3 +29,53 @@
 .button {
     @include botones()
 }
+
+@media screen and (min-width: 120px) and (max-width: 424px) {
+
+    .main-ofertas {
+        padding: 20px;
+        display: flex;
+        padding: 30px;
+        min-height: 100vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        .card {
+            border: 0px;
+        }
+    }
+    }
+
+
+@media screen and (min-width: 425px) and (max-width: 698px) {
+    .main-ofertas {
+        padding: 20px;
+        display: flex;
+        padding: 30px;
+        min-height: 100vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        .card {
+            border: 0px;
+        }
+    }
+}
+
+@media screen and (min-width: 699px)and(max-width: 2500px) {
+    .main-ofertas {
+
+    display: flex;
+    padding: 20px;
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .card {
+        border: 0px;
+    }
+}
+ }

@@ -15,26 +15,40 @@
 </head>
 
 <body>
-    <header class="border">
-        <div><img class="imagen-logo" src="../imagenes/Farmacia-Vivo-Mercadal-logo.png" alt="logo" width="100px"
-                height="100px">
+    <header class="header-cosmetica">
+        
+        <div><img class="imagen-logo" src="../imagenes/Farmacia-Vivo-Mercadal-logo.png" alt="logo" width="60px"
+                height="60px">
             <h1>cósmetica</h1>
-        </div>
+            
+        </div> 
+        
 
-        <nav>
-            <ul class="lista-nav">
-                <li> <a id="list-nav" href="../index.html">Inicio</a></li>
-                <li> <a id="list-nav" href="../pages/farmacia.html">Farmacia</a></li>
-                <li> <a id="list-nav" href="../pages/cosmetica.html">Cosmetica</a></li>
-                <li> <a id="list-nav" href="../pages/formulario.html">Formulario</a></li>
-                <li> <a id="list-nav" href="../pages/ofertas.html">Ofertas</a></li>
-            </ul>
+        <nav class="border">
+            <section id="list-nav">
+                <nav class="navbar navbar-expand-lg bg-índigo-100">
+                    <div class="container-fluid">
+                        <a id="list-nav" href="../index.html">Inicio</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link" aria-current="page"
+                                    href="./formulario.html">Formulario</a>
+                                <a class="nav-link" href="./cosmetica.html">Cósmetica</a>
+                                <a class="nav-link" href="./ofertas.html">Ofertas</a>
+                                <a class="nav-link" href="./farmacia.html">Farmacia</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>   
+            </section>   
         </nav>
     </header>
 
-    <main>
-        <img class="dermocosmetica" src="../imagenes/dermocosmetica-full-desktop-FEB_3840x770.jpg" alt="dermocosmetica">
-    </main>
 
     <main class="main-cosmetica">
         <section>
@@ -43,6 +57,10 @@
                 <div class="card-body">
                     <h5 class="card-title">EUCERIN KIDS</h5>
                     <p class="card-text">Alta protección para los más pequeños.</p>
+                    <p>Protege a los más chiquitos del sol
+                        la nueva línea de eucerin de larga duración y resistente
+                        al agua!!
+                    </p>
                     <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
             </div>
@@ -55,6 +73,8 @@
                 <div class="card-body">
                     <h5 class="card-title">NIVEA SUN</h5>
                     <p class="card-text">Mayor proteccíon 2 en 1 ,protege e hidrata</p>
+                    <p>Protege, humecta y previene lastimaduras de la piel.
+                    </p>
                     <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
             </div>
@@ -68,18 +88,33 @@
                     <h5 class="card-title">LOCIÓN</h5>
                     <p class="card-text">Loción perfumada</p>
                     <p>Fragancia importada, poco stock!!</p>
+                    <p>Fragancia única y duradera</p>
                     <p>$9.000</p>
                     <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
             </div>
         </section>
-    </main>
+    
+        <section>
+            <div class="card" style="width: 18rem;">
+                <img src="../imagenes/200-g1-b0428aa7989d6fa62716517802693989-480-0.png" class="card-img-top" alt="dermaglos">
+                <div class="card-body">
+                    <h5 class="card-title">DERMAGLOS</h5>
+                    <p class="card-text">Crema humectante</p>
+                    <p>Crema humectante y regeneradora con vitamina A, ayuda a prevenir el envejecimiento</p>
+                    <p>$2.100</p>
+                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                </div>
+            </div>
+        </section>
+    </main> 
 
 
 
 
-    <!--footer-->
-    <div class="conteiner-fluid">
+    <!--footer--> 
+    <footer class="conteiner-fluid">
+    <div >
         <div class="row p-5 pb-2 bg-dark text-white">
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <p class="h3">Farmacia LLoret</p>
@@ -133,6 +168,7 @@
         </div>
 
     </div>
+</footer>
     <!-- JavaScript  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

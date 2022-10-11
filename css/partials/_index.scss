@@ -1,6 +1,8 @@
 /*diseno mobile*/
 @media screen and (min-width: 120px) and (max-width: 424px) {
 
+    
+
     .grid {
         display: grid;
         grid-template-areas:
@@ -106,10 +108,53 @@
         width: 150px;
 
     }
-}
+
+    .continuar {
+
+        padding: 10px;
+
+        .titu-parra {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        #card-img-top {
+            width: auto;
+        }
+
+        .card-body {
+            font-size: 10px;
+            background-color: #35ca74;
+            color: rgb(2, 2, 2);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    }
+ }
+ 
 
 /*media tablet*/
 @media screen and (min-width: 425px) and (max-width: 767px) {
+    .continuar {
+
+        padding: 20px;
+
+        .titu-parra {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #card-img-top {
+            width: auto;
+        }
+
+        .card-body {
+            font-size: 10px;
+            background-color: #35ca74;
+            color: rgb(2, 2, 2);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    }
+    
 
     .grid {
         display: grid;
@@ -200,7 +245,37 @@
 }
 
 /*media escritorio*/
-@media screen and (min-width: 699px)and(max-width: 1400px) {
+@media screen and (min-width: 699px)and(max-width: 2560px) {
+
+    .continuar {
+        li a {
+            color: #030303;
+        }
+
+        .titu-parra {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #card-img-top {
+            width: auto;
+        }
+        
+        padding: 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+        justify-content: space-around;
+
+        .card-body {
+            font-size: 25px;
+            background-color: #b7d597;
+            color: rgb(2, 2, 2);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    }
+
+
 
     .grid {
         display: grid;
@@ -226,7 +301,7 @@
 
     nav {
         grid-area: nav;
-        background-color: rgb(235, 217, 252)
+        background-color: rgb(210, 178, 240)
     }
 
     .conteiner-fluid {
@@ -234,7 +309,8 @@
         background-color: map-get($colores, fondofooterindex);
 
 
-        bottom: 0;
+        
+        bottom: 0; 
 
 
     }
@@ -297,7 +373,10 @@
         width: 400px;
         height: 400px;
     }
+   
 
+
+     }
     .destacadas {
         grid-area: destacadas;
         display: flex;
@@ -314,5 +393,6 @@
             margin-top: 0;
             margin-bottom: 2rem;
         }
-    }
+
+        
 }

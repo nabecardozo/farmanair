@@ -12,25 +12,35 @@
     <title>ofertas</title>
 </head>
 <body class="body-ofertas">
-    <h1 class="titulo-ofertas">ofertas</h1>
-    <!--lista no ordenada-->
-    <nav class="border"> 
-        <ul class="lista-nav">
-             <li> <a id="list-nav" href="../index.html">Inicio</a></li>
-             <li> <a id="list-nav" href="./farmacia.html">Farmacia</a></li>
-             <li> <a id="list-nav" href="./cosmetica.html">Cosmetica</a></li>
-             <li> <a id="list-nav" href="./formulario.html">Formulario</a></li>
-             <li> <a id="list-nav" href="./ofertas.html">Ofertas</a></li>
-         </ul>
-         </nav>
+    <header>
+        <h1 class="titulo-formulario">OFERTAS!!</h1>
+        <!--lista nav-->
+        <nav class="border">
+            <section id="list-nav">
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <a id="list-nav" href="../index.html">Inicio</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link" aria-current="page"
+                                    href="./formulario.html">Formulario</a>
+                                <a class="nav-link" href="./cosmetica.html">Cósmetica</a>
+                                <a class="nav-link" href="./ofertas.html">Ofertas</a>
+                                <a class="nav-link" href="./farmacia.html">Farmacia</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>   
+            </section>   
+        </nav>
+    </header>
 
-    <main class="boton-ofertas">
-        <button class="button">CÓSMETICA</button>
-        <button class="button primario">PERFUMERÍA</button>
-        <button class="button secundario">FARMACIA</button>
-    </main>
-
-    <main class="main-cosmetica">
+    <main class="main-ofertas">
         <section>
             <div class="card" style="width: 18rem;">
                 <img src="../imagenes/paracetamol-isa-1g-x-8-comprimidos.png" class="card-img-top" alt="...">
@@ -69,10 +79,10 @@
         </section>
     </main>
 
-    <main class="main-cosmetica">
+    <main class="main-ofertas">
         <section>
-            <div class="card" style="width: 18rem;">
-                <img src="../imagenes/berocca-performance-cmpeferx1.jpg" class="card-img-top" alt="...">
+            <div class="card" style="width: 15rem;">
+                <img src="../imagenes/berocca-performance-cmpeferx1.jpg" class="card-img-top" alt="multivitaminico beroca">
                 <div class="card-body">
                   <h5 class="card-title">BEROCCA</h5>
                   <p class="card-text">Vitaminas, venta libre ayuda a fortalecer el sistema inmune.</p>
@@ -80,10 +90,10 @@
                   <a href="#" class="btn btn-primary">Agregar al carrito</a>
                 </div>
               </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="card" style="width: 18rem;">
+            <section>
+            <div class="card" style="width: 16rem;">
                 <img src="../imagenes/product_9534836a175f441c9ffb1008d000f422_637383701057294617_0_m.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">TAFIROL</h5>

@@ -1,7 +1,9 @@
 
 * {
+   
     margin: 0;
 }
+
     header {
         display: flex;
         background-color: rgb(249, 240, 253);
@@ -11,10 +13,10 @@
         }
 
 header {
-    h1 { background-color: rgb(151, 240, 210);
-        padding: 16px;
+    h1 { background-color: rgb(248, 220, 253);
+        padding: 20px;
         margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-align: center;
         font-size: 40px;
         font-weight: 500;
@@ -41,30 +43,28 @@ font-size: 20px;
 font-weight: 500;
 }
 
-.dermocosmetica {
-    padding: 0.5px;
-    width: 1200px;
-    height: auto;
-}
+
 
 .main-cosmetica {
     display: flex;
+    height: 100vh;
 }
 
 .card-img-top {
     width: 200px;
 }
 
-@media screen and (min-width: 420px) and (max-width: 700px) {
-    .dermocosmetica {
-        width: 800px;
-        height: auto;
-    }
+@media screen and (min-width: 320px) and (max-width: 700px) {
+    
     .main-cosmetica {
+        padding: 20px;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 0;
+        height: auto;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     
     .card-img-top {
@@ -74,6 +74,54 @@ font-weight: 500;
     .card-text {
         font-size: 15px;
         font-weight: 100;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
+
+    
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .main-cosmetica {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: auto;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+}
+/*media escritorio*/
+@media screen and (min-width: 901px)and(max-width: 1400px) {
+    #list-nav {
+        padding: 30px;
+        background-color: rgb(248, 216, 251);
+    }
+    .header-cosmetica {
+        display: flex;
+        background-color: rgb(249, 240, 253);
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: space-evenly;
+        }
+
+    .card-title {
+        font-size: 29px;
+        text-align:start;
+    }
+.card-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.card {
+    width: 14rem!important
+}
+.main-cosmetica {
+    height: auto;
+}
+
 }
