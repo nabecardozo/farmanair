@@ -1,12 +1,6 @@
 .main-farmacia {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    width: 80%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
+    min-height: 100vh;
+    
 }
 .titulo-farmacia {
     background-color: rgb(249, 233, 255);
