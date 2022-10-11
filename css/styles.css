@@ -23,6 +23,7 @@
 
 .main-farmacia {
   min-height: 100vh;
+  bottom: 0;
 }
 
 .titulo-farmacia {
